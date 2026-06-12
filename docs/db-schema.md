@@ -11,7 +11,7 @@
 |---|---|---|
 | `id` | string | `u_1`, … |
 | `name` | string | "Laith Hayajneh" |
-| `email` | string | "laith.hayajneh@ctdi.com" |
+| `email` | string | "laith.hayajneh@mcdean.com" |
 | `role` | enum | `Admin` \| `Engineer` |
 | `active` | boolean | toggled in Admin |
 

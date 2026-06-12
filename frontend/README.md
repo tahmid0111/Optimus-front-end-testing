@@ -1,6 +1,6 @@
-# MC DEAN Optimus — front-end prototype
+# M.C. DEAN Optimus — front-end prototype
 
-Internal web app for **CTDI** engineers: drop SCADA screenshots, get filled commissioning
+Internal web app for **M.C. Dean** engineers: drop SCADA screenshots, get filled commissioning
 checklists back as PDFs. **This is a front-end-only prototype for a live demo** — every API call
 is mocked. No backend, no auth.
 

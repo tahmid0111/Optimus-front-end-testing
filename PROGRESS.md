@@ -1,4 +1,4 @@
-# PROGRESS.md — MC DEAN Optimus (front-end prototype)
+# PROGRESS.md — M.C. DEAN Optimus (front-end prototype)
 
 > **Session brief.** Read this first. Keep it LEAN — full history lives in `STATUS.md`.
 

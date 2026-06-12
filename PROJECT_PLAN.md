@@ -1,4 +1,4 @@
-# PROJECT_PLAN.md — MC DEAN Optimus (front-end prototype)
+# PROJECT_PLAN.md — M.C. DEAN Optimus (front-end prototype)
 
 > The spec. `CLAUDE.md` is the constitution (rules); this is the blueprint (what we're building);
 > `PROGRESS.md` is the live status. If anything here conflicts with `CLAUDE.md`, CLAUDE.md wins.
@@ -7,8 +7,8 @@
 
 ## Mission
 
-Engineers at CTDI commission electrical gear and have to fill out commissioning checklists from
-what they see on SCADA screens — slow, manual, error-prone. MC DEAN Optimus does the boring part: drop the
+Engineers at M.C. Dean commission electrical gear and have to fill out commissioning checklists from
+what they see on SCADA screens — slow, manual, error-prone. M.C. DEAN Optimus does the boring part: drop the
 screenshots, get filled paperwork back as PDFs.
 
 **One sentence:** Turn SCADA screenshots into commissioning paperwork, in a batch, without lifting
@@ -94,7 +94,7 @@ See `docs/design-tokens.md` for the exact tokens **and the copy/voice rules** (t
 tone is part of the spec, not an afterthought).
 
 > Note: this deliberately does **not** use the war-room house style (`ui-style-khalid-farhan`,
-> dark neo-brutalism). The owner specified the opposite look for MC DEAN Optimus.
+> dark neo-brutalism). The owner specified the opposite look for M.C. DEAN Optimus.
 
 ---
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
-import { Zap, ChevronDown, LogOut, User } from 'lucide-react'
+import { ChevronDown, LogOut, User } from 'lucide-react'
 import { toast } from 'sonner'
 import { cn } from '../../lib/cn.js'
 
@@ -28,12 +28,10 @@ export default function TopNav() {
     <header className="sticky top-0 z-40 border-b border-[#e3eaf4] bg-white/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 md:px-8">
         {/* wordmark */}
-        <button onClick={() => navigate('/')} className="press flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-xl bg-blue text-white shadow-soft">
-            <Zap size={18} strokeWidth={2.6} fill="currentColor" />
-          </span>
+        <button onClick={() => navigate('/')} className="press flex items-center gap-2.5">
+          <img src="/mcdean-logo.png" alt="M.C. Dean" className="h-7 w-auto" />
           <span className="text-xl font-extrabold tracking-tight text-ink">
-            MC DEAN Optimus
+            Optimus
           </span>
         </button>
 

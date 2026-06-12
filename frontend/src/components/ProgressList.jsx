@@ -15,7 +15,7 @@ export default function ProgressList({ runs = [], onRetry, retryingId }) {
         <div
           key={r.id}
           className={cn(
-            'flex animate-fade-in items-center gap-4 rounded-2xl border bg-blue-card p-4 transition-colors',
+            'flex animate-fade-in items-center gap-4 rounded-2xl border bg-card-brand p-4 transition-colors',
             r.status === 'processing' ? 'border-amber-200 bg-amber-50/30' : 'border-[#e3eaf4]',
           )}
           style={{ animationDelay: `${i * 25}ms` }}

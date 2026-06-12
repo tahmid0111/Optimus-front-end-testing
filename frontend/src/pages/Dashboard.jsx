@@ -25,7 +25,7 @@ export default function Dashboard() {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-3xl font-extrabold tracking-tight text-ink">Hey Laith 👋</h1>
-          <p className="mt-1 text-sm text-ink/55">Here's what MC DEAN Optimus has been up to.</p>
+          <p className="mt-1 text-sm text-ink/55">Here's what M.C. DEAN Optimus has been up to.</p>
         </div>
         <Button size="lg" onClick={() => navigate('/new')}>
           <Plus size={18} strokeWidth={2.6} /> New Run
@@ -60,7 +60,7 @@ export default function Dashboard() {
             <EmptyState
               illustration="🚀"
               title="Nothing here yet. Let's change that."
-              message="Drop a few SCADA screenshots and MC DEAN Optimus turns them into commissioning paperwork."
+              message="Drop a few SCADA screenshots and M.C. DEAN Optimus turns them into commissioning paperwork."
               action={
                 <Button onClick={() => navigate('/new')}>
                   <Rocket size={16} /> Start your first run

@@ -1,4 +1,4 @@
-# STATUS.md — MC DEAN Optimus (front-end prototype)
+# STATUS.md — M.C. DEAN Optimus (front-end prototype)
 
 > **Full archive.** Every phase, every locked rule. Grows over time, never compressed. The lean
 > session brief lives in `PROGRESS.md`.
@@ -7,7 +7,7 @@
 
 ## Phase 1 — Front-end prototype
 
-> Goal: a demo-ready, front-end-only MC DEAN Optimus that looks and feels real on mock data. Built 2026-06-12.
+> Goal: a demo-ready, front-end-only M.C. DEAN Optimus that looks and feels real on mock data. Built 2026-06-12.
 
 | Area | Status | Notes |
 |---|---|---|
@@ -26,7 +26,7 @@
 - **Single swap point** → all data and "API" calls live in `src/lib/mock-api.js`; the real backend
   replaces only that file (contract in `docs/api-spec.md`). UI never changes.
 - **Design override** → white base + deep blue accent + soft/rounded look, deliberately NOT the war-room
-  house style (`reference/ui-style-khalid-farhan`, dark neo-brutalism). Owner specified this for MC DEAN Optimus.
+  house style (`reference/ui-style-khalid-farhan`, dark neo-brutalism). Owner specified this for M.C. DEAN Optimus.
 - **No backend / no auth** → hardcoded admin "Laith Hayajneh"; app opens on the Dashboard.
 - **Confetti hand-rolled** (canvas, no dependency) to keep the dep list close to the owner's named stack.
 - **react-router-dom added** — the one library beyond the named stack, needed for the 5 pages.

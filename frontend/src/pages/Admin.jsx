@@ -119,7 +119,7 @@ export default function Admin() {
         open={inviteOpen}
         onClose={() => setInviteOpen(false)}
         title="Invite a teammate"
-        subtitle="They'll get an email to join MC DEAN Optimus."
+        subtitle="They'll get an email to join M.C. DEAN Optimus."
         footer={
           <>
             <Button variant="ghost" onClick={() => setInviteOpen(false)}>Cancel</Button>
@@ -134,7 +134,7 @@ export default function Admin() {
             <input {...register('name')} placeholder="Jordan Pierce" className={inputCls} />
           </Field>
           <Field label="Email" error={errors.email?.message}>
-            <input {...register('email')} placeholder="jordan.pierce@ctdi.com" className={inputCls} />
+            <input {...register('email')} placeholder="jordan.pierce@mcdean.com" className={inputCls} />
           </Field>
           <Field label="Role" error={errors.role?.message}>
             <select {...register('role')} className={inputCls}>

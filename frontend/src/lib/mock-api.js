@@ -44,12 +44,12 @@ const FAILURE_REASONS = [
 
 // ---------- seed: users ----------
 const users = [
-  { id: 'u_1', name: 'Laith Hayajneh', email: 'laith.hayajneh@ctdi.com', role: 'Admin', active: true },
-  { id: 'u_2', name: 'Marcus Lee', email: 'marcus.lee@ctdi.com', role: 'Engineer', active: true },
-  { id: 'u_3', name: 'Priya Nair', email: 'priya.nair@ctdi.com', role: 'Engineer', active: true },
-  { id: 'u_4', name: 'Diego Alvarez', email: 'diego.alvarez@ctdi.com', role: 'Engineer', active: true },
-  { id: 'u_5', name: 'Sara Kim', email: 'sara.kim@ctdi.com', role: 'Engineer', active: false },
-  { id: 'u_6', name: 'Owen Brooks', email: 'owen.brooks@ctdi.com', role: 'Admin', active: true },
+  { id: 'u_1', name: 'Laith Hayajneh', email: 'laith.hayajneh@mcdean.com', role: 'Admin', active: true },
+  { id: 'u_2', name: 'Gregory Robinson', email: 'gregory.robinson@mcdean.com', role: 'Engineer', active: true },
+  { id: 'u_3', name: 'Jack Orlando', email: 'jack.orlando@mcdean.com', role: 'Engineer', active: true },
+  { id: 'u_4', name: 'Chris Randall', email: 'chris.randall@mcdean.com', role: 'Engineer', active: true },
+  { id: 'u_5', name: 'Sara Kim', email: 'sara.kim@mcdean.com', role: 'Engineer', active: false },
+  { id: 'u_6', name: 'Micheal Schaefer', email: 'micheal.schaefer@mcdean.com', role: 'Admin', active: true },
 ]
 
 const CURRENT_USER = users[0] // Laith Hayajneh, Admin — hardcoded "logged in" user
@@ -122,10 +122,10 @@ const db = {
     seedBatch({
       label: 'Morning commissioning sweep',
       createdAt: minsAgo(38),
-      createdBy: 'Marcus Lee',
+      createdBy: 'Gregory Robinson',
       rows: [
-        ...[names[0], names[1], names[2]].map((deviceName) => ({ deviceName, engineer: 'Marcus Lee', status: 'processing' })),
-        ...[names[3], names[4], names[5], names[6], names[7]].map((deviceName) => ({ deviceName, engineer: 'Marcus Lee', status: 'queued' })),
+        ...[names[0], names[1], names[2]].map((deviceName) => ({ deviceName, engineer: 'Gregory Robinson', status: 'processing' })),
+        ...[names[3], names[4], names[5], names[6], names[7]].map((deviceName) => ({ deviceName, engineer: 'Gregory Robinson', status: 'queued' })),
       ],
     }),
     seedBatch({
@@ -142,21 +142,21 @@ const db = {
     seedBatch({
       label: 'ATS + breaker checkout',
       createdAt: hoursAgo(4),
-      createdBy: 'Priya Nair',
+      createdBy: 'Jack Orlando',
       rows: [
-        { deviceName: names[4], engineer: 'Priya Nair', status: 'done' },
-        { deviceName: names[5], engineer: 'Priya Nair', status: 'done' },
-        { deviceName: names[6], engineer: 'Priya Nair', status: 'done' },
-        { deviceName: names[7], engineer: 'Priya Nair', status: 'done' },
-        { deviceName: names[8], engineer: 'Priya Nair', status: 'done' },
-        { deviceName: names[9], engineer: 'Priya Nair', status: 'failed' },
+        { deviceName: names[4], engineer: 'Jack Orlando', status: 'done' },
+        { deviceName: names[5], engineer: 'Jack Orlando', status: 'done' },
+        { deviceName: names[6], engineer: 'Jack Orlando', status: 'done' },
+        { deviceName: names[7], engineer: 'Jack Orlando', status: 'done' },
+        { deviceName: names[8], engineer: 'Jack Orlando', status: 'done' },
+        { deviceName: names[9], engineer: 'Jack Orlando', status: 'failed' },
       ],
     }),
     seedBatch({
       label: 'Power meter audit',
       createdAt: daysAgo(1, 14, 5),
-      createdBy: 'Diego Alvarez',
-      rows: [names[1], names[6], names[10]].map((deviceName) => ({ deviceName, engineer: 'Diego Alvarez', status: 'done' })),
+      createdBy: 'Chris Randall',
+      rows: [names[1], names[6], names[10]].map((deviceName) => ({ deviceName, engineer: 'Chris Randall', status: 'done' })),
     }),
     seedBatch({
       label: 'Region R1 turnover',
@@ -177,17 +177,17 @@ const db = {
     seedBatch({
       label: 'Switchgear acceptance',
       createdAt: daysAgo(4, 13, 40),
-      createdBy: 'Marcus Lee',
-      rows: [names[1], names[5], names[6], names[2], names[10]].map((deviceName) => ({ deviceName, engineer: 'Marcus Lee', status: 'done' })),
+      createdBy: 'Gregory Robinson',
+      rows: [names[1], names[5], names[6], names[2], names[10]].map((deviceName) => ({ deviceName, engineer: 'Gregory Robinson', status: 'done' })),
     }),
     seedBatch({
       label: 'Feeder relay set',
       createdAt: daysAgo(5, 10, 5),
-      createdBy: 'Diego Alvarez',
+      createdBy: 'Chris Randall',
       rows: [
-        { deviceName: names[0], engineer: 'Diego Alvarez', status: 'done' },
-        { deviceName: names[4], engineer: 'Diego Alvarez', status: 'done' },
-        { deviceName: names[7], engineer: 'Diego Alvarez', status: 'failed' },
+        { deviceName: names[0], engineer: 'Chris Randall', status: 'done' },
+        { deviceName: names[4], engineer: 'Chris Randall', status: 'done' },
+        { deviceName: names[7], engineer: 'Chris Randall', status: 'failed' },
       ],
     }),
   ],

@@ -50,7 +50,7 @@ export default function NewRun() {
       <div>
         <h1 className="text-3xl font-extrabold tracking-tight text-ink">New Run</h1>
         <p className="mt-1 text-sm text-ink/55">
-          Drop your screenshots here — MC DEAN Optimus will do the boring part. Up to {MAX_DEVICES} devices in one batch.
+          Drop your screenshots here — M.C. DEAN Optimus will do the boring part. Up to {MAX_DEVICES} devices in one batch.
         </p>
       </div>
 
@@ -107,7 +107,7 @@ export default function NewRun() {
         open={confirmOpen}
         onClose={() => setConfirmOpen(false)}
         title={`Ready to fire off ${devices.length} ${devices.length === 1 ? 'device' : 'devices'}?`}
-        subtitle="MC DEAN Optimus will start reading these screens right away."
+        subtitle="M.C. DEAN Optimus will start reading these screens right away."
         footer={
           <>
             <Button variant="ghost" onClick={() => setConfirmOpen(false)}>

@@ -11,7 +11,7 @@ import { SkeletonRows } from '../components/ui/Skeleton.jsx'
 import { useHistory } from '../hooks/useRuns.js'
 import { formatDateTime, formatBytes, formatDuration } from '../lib/format.js'
 
-const ENGINEERS = ['Laith Hayajneh', 'Marcus Lee', 'Priya Nair', 'Diego Alvarez', 'Sara Kim']
+const ENGINEERS = ['Laith Hayajneh', 'Gregory Robinson', 'Jack Orlando', 'Chris Randall', 'Sara Kim']
 const STATUSES = [
   { value: 'all', label: 'All statuses' },
   { value: 'queued', label: 'Queued' },
@@ -45,7 +45,7 @@ export default function History() {
     <div className="space-y-6">
       <div>
         <h1 className="text-3xl font-extrabold tracking-tight text-ink">History</h1>
-        <p className="mt-1 text-sm text-ink/55">Every run MC DEAN Optimus has handled. Filter, find, grab the paperwork.</p>
+        <p className="mt-1 text-sm text-ink/55">Every run M.C. DEAN Optimus has handled. Filter, find, grab the paperwork.</p>
       </div>
 
       {/* filters */}

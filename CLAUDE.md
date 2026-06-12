@@ -1,6 +1,6 @@
 > Codex: ignore this file. Read AGENTS.md instead.
 
-# CLAUDE.md — MC DEAN Optimus (front-end prototype)
+# CLAUDE.md — M.C. DEAN Optimus (front-end prototype)
 
 > The constitution of this repo. Read it before touching code. **This file wins** any conflict.
 
@@ -8,7 +8,7 @@
 
 ## Purpose
 
-MC DEAN Optimus is an internal web app for **CTDI** engineers: drop SCADA screenshots, get filled
+M.C. DEAN Optimus is an internal web app for **M.C. Dean** engineers: drop SCADA screenshots, get filled
 commissioning checklists back as PDFs. **This repo is the front-end ONLY, and it's a prototype
 for a live demo** — every "API" call is mocked, there is no backend, and there is no login. The
 app opens straight on the Dashboard as a hardcoded admin user, **Laith Hayajneh**, so every page

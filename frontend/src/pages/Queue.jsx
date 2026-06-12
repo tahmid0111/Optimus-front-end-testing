@@ -82,7 +82,7 @@ export default function Queue() {
           ) : (
             <>
               <Coffee size={15} className="text-blue" />
-              MC DEAN Optimus is reading your screens… grab a coffee · {finished} of {total} done
+              M.C. DEAN Optimus is reading your screens… grab a coffee · {finished} of {total} done
             </>
           )}
         </p>

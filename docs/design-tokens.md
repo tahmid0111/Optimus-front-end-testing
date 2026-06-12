@@ -13,7 +13,7 @@
 | `blue` (primary) | `#002B5C` | deep navy (M.C. Dean brand) — primary buttons, active nav, accents, chart |
 | `blue-hover` | `#1464B4` | hover on primary — royal blue from the brand chevron |
 | `blue-tint` | `#DCEDFA` | light blue — soft backgrounds, badges, icon squares |
-| `blue-card` | `#F0F7FD` | lightest blue — card surfaces (`Card`, progress rows) |
+| `bg-card-brand` | `#CFE2F6 → #DCEEFB → #DFF4DB` | card surfaces — the brand banner gradient in ambient tints: deep blue → light blue → ambient green |
 | `ink` | `#1A1A2E` | text, dark avatars |
 | page bg | `#FFFFFF` | white, with a faint light-blue radial glow top-right |
 
@@ -62,7 +62,7 @@
 
 ---
 
-## Voice — how MC DEAN Optimus talks (NON-NEGOTIABLE)
+## Voice — how M.C. DEAN Optimus talks (NON-NEGOTIABLE)
 
 Simple words, short punchy lines, a little playful. The app talks *to* the user. **Never** robotic
 ("Operation completed successfully" is banned). Match these — they're the ones already shipped:
@@ -70,8 +70,8 @@ Simple words, short punchy lines, a little playful. The app talks *to* the user.
 | Moment | Copy |
 |---|---|
 | Empty dashboard | "Nothing here yet. Let's change that. 🚀" → Start your first run |
-| Upload zone | "Drop your screenshots here — MC DEAN Optimus will do the boring part" |
-| Processing | "MC DEAN Optimus is reading your screens… ☕ grab a coffee" |
+| Upload zone | "Drop your screenshots here — M.C. DEAN Optimus will do the boring part" |
+| Processing | "M.C. DEAN Optimus is reading your screens… ☕ grab a coffee" |
 | Done | "Paperwork's ready. You didn't lift a finger. 📄✨" |
 | Failed | human reason + "One click to retry." |
 | Run confirm | "Ready to fire off 7 devices?" |
@@ -80,7 +80,7 @@ Simple words, short punchy lines, a little playful. The app talks *to* the user.
 | Toast: zip | "ZIP is ready to grab" |
 | Toast: invite | "Invite sent ✉️" |
 | Validation: too few | "Need at least 2 screenshots to work the magic" |
-| Validation: too many | "4 is the max — MC DEAN Optimus has limits 😅" |
+| Validation: too many | "4 is the max — M.C. DEAN Optimus has limits 😅" |
 | Validation: wrong type | "PNG or JPG only, please" |
 
 When you add a new string, write it like a friendly coworker would say it out loud.

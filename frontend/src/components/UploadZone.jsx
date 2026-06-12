@@ -25,7 +25,7 @@ export default function UploadZone({ files = [], onAdd, onRemove }) {
     }
     const room = MAX_FILES - files.length
     if (valid.length > room) {
-      toast.error(`${MAX_FILES} is the max — MC DEAN Optimus has limits 😅`)
+      toast.error(`${MAX_FILES} is the max — M.C. DEAN Optimus has limits 😅`)
     }
     const accepted = valid.slice(0, Math.max(0, room)).map((f) => ({
       name: f.name,
@@ -71,7 +71,7 @@ export default function UploadZone({ files = [], onAdd, onRemove }) {
         <p className="mt-3 text-sm font-bold text-ink">
           Drop your screenshots here
         </p>
-        <p className="text-xs text-ink/50">MC DEAN Optimus will do the boring part · PNG or JPG · 2–4 images</p>
+        <p className="text-xs text-ink/50">M.C. DEAN Optimus will do the boring part · PNG or JPG · 2–4 images</p>
       </div>
 
       {/* thumbnails */}
