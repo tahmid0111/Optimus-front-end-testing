@@ -15,12 +15,14 @@ export default function ProgressList({ runs = [], onRetry, retryingId }) {
         <div
           key={r.id}
           className={cn(
-            'flex animate-fade-in items-center gap-4 rounded-2xl border bg-card-brand p-4 transition-colors',
-            r.status === 'processing' ? 'border-amber-200 bg-amber-50/30' : 'border-[#e3eaf4]',
+            'flex animate-fade-in items-center gap-4 rounded-2xl border p-4 transition-colors',
+            r.status === 'processing'
+              ? 'border-amber-200 bg-amber-50/30'
+              : cn('border-[#e3eaf4]', ['bg-card-deep', 'bg-card-light', 'bg-card-green'][i % 3]),
           )}
           style={{ animationDelay: `${i * 25}ms` }}
         >
-          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-blue-tint text-xs font-bold text-blue">
+          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-white/70 text-xs font-bold text-blue">
             {i + 1}
           </span>
 

@@ -34,14 +34,14 @@ export default function Dashboard() {
 
       {/* summary cards */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <StatCard icon={Inbox} label="In queue" value={s.inQueue ?? 0} hint="waiting to start" loading={summary.isLoading} style={{ animationDelay: '0ms' }} />
-        <StatCard icon={Loader} label="Processing" value={s.processing ?? 0} hint="reading screens now" loading={summary.isLoading} style={{ animationDelay: '60ms' }} />
-        <StatCard icon={CheckCircle2} label="Completed today" value={s.completedToday ?? 0} hint="paperwork done" loading={summary.isLoading} style={{ animationDelay: '120ms' }} />
+        <StatCard icon={Inbox} label="In queue" value={s.inQueue ?? 0} hint="waiting to start" tone="deep" loading={summary.isLoading} style={{ animationDelay: '0ms' }} />
+        <StatCard icon={Loader} label="Processing" value={s.processing ?? 0} hint="reading screens now" tone="light" loading={summary.isLoading} style={{ animationDelay: '60ms' }} />
+        <StatCard icon={CheckCircle2} label="Completed today" value={s.completedToday ?? 0} hint="paperwork done" tone="green" loading={summary.isLoading} style={{ animationDelay: '120ms' }} />
       </div>
 
       {/* recent runs + weekly chart */}
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-        <Card className="animate-fade-in lg:col-span-2">
+        <Card tone="deep" className="animate-fade-in lg:col-span-2">
           <div className="flex items-center justify-between border-b border-[#eaf0f8] px-5 py-4">
             <h2 className="font-extrabold tracking-tight text-ink">Recent runs</h2>
             <button
@@ -88,7 +88,7 @@ export default function Dashboard() {
         </Card>
 
         {/* weekly throughput */}
-        <Card className="animate-fade-in p-5" style={{ animationDelay: '80ms' }}>
+        <Card tone="green" className="animate-fade-in p-5" style={{ animationDelay: '80ms' }}>
           <h2 className="font-extrabold tracking-tight text-ink">This week</h2>
           <p className="text-xs text-ink/45">Paperwork completed per day</p>
           <div className="mt-4 h-[150px]">

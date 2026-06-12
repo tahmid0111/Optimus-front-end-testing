@@ -53,7 +53,7 @@ export default function Queue() {
     return (
       <div className="space-y-6">
         <div className="h-8 w-72 skeleton rounded-lg" />
-        <Card className="p-5">
+        <Card tone="deep" className="p-5">
           <SkeletonRows rows={6} />
         </Card>
       </div>
@@ -107,7 +107,7 @@ export default function Queue() {
 
       {/* celebration banner */}
       {allDone && (
-        <Card className="animate-bounce-in overflow-hidden border-blue/20">
+        <Card tone="green" className="animate-bounce-in overflow-hidden border-blue/20">
           <div className="flex flex-col items-start gap-4 bg-gradient-to-r from-blue-tint to-white p-6 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-3">
               <span className="grid h-12 w-12 place-items-center rounded-2xl bg-blue text-white shadow-soft">

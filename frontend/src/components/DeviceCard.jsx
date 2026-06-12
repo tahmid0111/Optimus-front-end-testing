@@ -1,5 +1,5 @@
 import { CheckCircle2, Trash2, CircleDashed } from 'lucide-react'
-import Card from './ui/Card.jsx'
+import Card, { cardTone } from './ui/Card.jsx'
 import SearchSelect from './ui/SearchSelect.jsx'
 import UploadZone from './UploadZone.jsx'
 import { useNewRunStore, isDeviceValid } from '../store/newRunStore.js'
@@ -19,7 +19,7 @@ export default function DeviceCard({ device, index, deviceOptions, onAddNewOptio
   const valid = isDeviceValid(device)
 
   return (
-    <Card className="animate-fade-in p-5" style={{ animationDelay: `${index * 40}ms` }}>
+    <Card tone={cardTone(index)} className="animate-fade-in p-5" style={{ animationDelay: `${index * 40}ms` }}>
       <div className="mb-4 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
           <span className="grid h-7 w-7 place-items-center rounded-lg bg-ink text-xs font-bold text-white">

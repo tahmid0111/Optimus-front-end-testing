@@ -13,7 +13,9 @@
 | `blue` (primary) | `#002B5C` | deep navy (M.C. Dean brand) — primary buttons, active nav, accents, chart |
 | `blue-hover` | `#1464B4` | hover on primary — royal blue from the brand chevron |
 | `blue-tint` | `#DCEDFA` | light blue — soft backgrounds, badges, icon squares |
-| `bg-card-brand` | `#CFE2F6 → #DCEEFB → #DFF4DB` | card surfaces — the brand banner gradient in ambient tints: deep blue → light blue → ambient green |
+| `card-deep` | `#C9DDF5` | card surfaces, deep blue — sibling cards rotate through the three card tones |
+| `card-light` | `#DFF0FC` | card surfaces, light blue (the `Card` default) |
+| `card-green` | `#DFF4DB` | card surfaces, ambient green — from the brand banner |
 | `ink` | `#1A1A2E` | text, dark avatars |
 | page bg | `#FFFFFF` | white, with a faint light-blue radial glow top-right |
 

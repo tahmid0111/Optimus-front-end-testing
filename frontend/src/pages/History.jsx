@@ -49,7 +49,7 @@ export default function History() {
       </div>
 
       {/* filters */}
-      <Card className="flex flex-wrap items-center gap-3 p-4">
+      <Card tone="deep" className="flex flex-wrap items-center gap-3 p-4">
         <div className="relative min-w-[200px] flex-1">
           <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-ink/35" />
           <input

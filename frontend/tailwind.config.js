@@ -10,6 +10,12 @@ export default {
           hover: '#1464B4', // hover — brighter blue
           tint: '#DCEDFA', // light blue — soft background / badge tint
         },
+        // card surfaces — the three brand-banner tones; sibling cards rotate
+        card: {
+          deep: '#C9DDF5', // deep blue
+          light: '#DFF0FC', // light blue
+          green: '#DFF4DB', // ambient green
+        },
         ink: '#1A1A2E', // dark slate text
         // status palette
         status: {
@@ -21,11 +27,6 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-      },
-      backgroundImage: {
-        // card surfaces — the M.C. Dean banner gradient, in ambient tints:
-        // deep blue → light blue → ambient green
-        'card-brand': 'linear-gradient(135deg, #CFE2F6 0%, #DCEEFB 45%, #DFF4DB 100%)',
       },
       borderRadius: {
         '2xl': '1rem',

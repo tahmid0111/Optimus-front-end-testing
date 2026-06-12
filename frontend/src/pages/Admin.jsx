@@ -67,7 +67,7 @@ export default function Admin() {
         </Button>
       </div>
 
-      <Card>
+      <Card tone="green">
         {isLoading ? (
           <div className="p-5"><SkeletonRows rows={5} /></div>
         ) : (
