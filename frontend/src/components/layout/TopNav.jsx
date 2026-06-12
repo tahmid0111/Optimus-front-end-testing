@@ -11,7 +11,7 @@ const LINKS = [
   { to: '/admin', label: 'Admin' },
 ]
 
-const USER = { name: 'Laith Hayajneh', role: 'Admin', initials: 'LH' }
+const USER = { name: 'Laith Hayajneh', role: 'Engineer', initials: 'LH' }
 
 export default function TopNav() {
   const [menuOpen, setMenuOpen] = useState(false)

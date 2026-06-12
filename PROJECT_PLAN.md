@@ -40,7 +40,7 @@ filled PDF/DOCX) swaps in later behind the same UI.
 | Dashboard, New Run, Queue, History | ✅ | ✅ |
 | Admin (manage users) | ✅ | ❌ |
 
-> In the prototype there's no real auth — the app is always Laith Hayajneh (Admin), so the Admin tab
+> In the prototype there's no real auth — the app is always Laith Hayajneh (Engineer) with no role gating, so the Admin tab
 > is always shown. The role split is documented here for when real auth lands.
 
 ---

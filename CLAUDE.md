@@ -11,7 +11,7 @@
 M.C. DEAN Optimus is an internal web app for **M.C. Dean** engineers: drop SCADA screenshots, get filled
 commissioning checklists back as PDFs. **This repo is the front-end ONLY, and it's a prototype
 for a live demo** — every "API" call is mocked, there is no backend, and there is no login. The
-app opens straight on the Dashboard as a hardcoded admin user, **Laith Hayajneh**, so every page
+app opens straight on the Dashboard as a hardcoded user, **Laith Hayajneh** (Engineer), so every page
 is visible.
 
 v1 (this prototype) = five working screens — Dashboard, New Run, Queue, History, Admin — driven
@@ -104,7 +104,7 @@ one shouldn't touch another. The mock API is the contract; build to it.
 - ❌ **Don't read or write data anywhere except `src/lib/mock-api.js`.** It's the single swap point —
   scatter data into components and the backend swap breaks the whole point of the prototype.
 - ❌ **Don't add a real network call, backend, or auth/login.** This is a mock prototype for a demo;
-  the "logged-in admin" (Laith Hayajneh) is hardcoded on purpose.
+  the "logged-in user" (Laith Hayajneh) is hardcoded on purpose.
 - ❌ **Don't write robotic system copy** ("Operation completed successfully"). The friendly voice is a
   feature, not decoration.
 

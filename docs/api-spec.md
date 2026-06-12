@@ -15,7 +15,7 @@ replacements so hooks stay untouched.
 
 | Mock fn | Real endpoint | Returns |
 |---|---|---|
-| `getCurrentUser()` | `GET /me` | `User` — hardcoded **Laith Hayajneh (Admin)** in the prototype |
+| `getCurrentUser()` | `GET /me` | `User` — hardcoded **Laith Hayajneh (Engineer)** in the prototype |
 
 There is no login in the prototype. Real auth lands here without touching screens.
 

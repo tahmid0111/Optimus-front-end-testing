@@ -44,15 +44,15 @@ const FAILURE_REASONS = [
 
 // ---------- seed: users ----------
 const users = [
-  { id: 'u_1', name: 'Laith Hayajneh', email: 'laith.hayajneh@mcdean.com', role: 'Admin', active: true },
-  { id: 'u_2', name: 'Gregory Robinson', email: 'gregory.robinson@mcdean.com', role: 'Engineer', active: true },
-  { id: 'u_3', name: 'Jack Orlando', email: 'jack.orlando@mcdean.com', role: 'Engineer', active: true },
-  { id: 'u_4', name: 'Chris Randall', email: 'chris.randall@mcdean.com', role: 'Engineer', active: true },
+  { id: 'u_1', name: 'Laith Hayajneh', email: 'laith.hayajneh@mcdean.com', role: 'Engineer', active: true },
+  { id: 'u_2', name: 'Gregory Robinson', email: 'gregory.robinson@mcdean.com', role: 'Admin', active: true },
+  { id: 'u_3', name: 'Jack Orlando', email: 'jack.orlando@mcdean.com', role: 'Admin', active: true },
+  { id: 'u_4', name: 'Chris Randall', email: 'chris.randall@mcdean.com', role: 'Admin', active: true },
   { id: 'u_5', name: 'Sara Kim', email: 'sara.kim@mcdean.com', role: 'Engineer', active: false },
   { id: 'u_6', name: 'Micheal Schaefer', email: 'micheal.schaefer@mcdean.com', role: 'Admin', active: true },
 ]
 
-const CURRENT_USER = users[0] // Laith Hayajneh, Admin — hardcoded "logged in" user
+const CURRENT_USER = users[0] // Laith Hayajneh, Engineer — hardcoded "logged in" user
 
 // ---------- seed: device options ----------
 let deviceOptions = [

@@ -27,7 +27,7 @@
   replaces only that file (contract in `docs/api-spec.md`). UI never changes.
 - **Design override** → white base + deep blue accent + soft/rounded look, deliberately NOT the war-room
   house style (`reference/ui-style-khalid-farhan`, dark neo-brutalism). Owner specified this for M.C. DEAN Optimus.
-- **No backend / no auth** → hardcoded admin "Laith Hayajneh"; app opens on the Dashboard.
+- **No backend / no auth** → hardcoded user "Laith Hayajneh" (Engineer); app opens on the Dashboard.
 - **Confetti hand-rolled** (canvas, no dependency) to keep the dep list close to the owner's named stack.
 - **react-router-dom added** — the one library beyond the named stack, needed for the 5 pages.
 - **Install left to the owner** — deps are declared in `package.json` but not installed (owner chose
