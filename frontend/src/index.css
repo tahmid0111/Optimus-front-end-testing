@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Explicit keyframes for the skeleton sweep — referenced by raw CSS below,
+   so it isn't emitted by a Tailwind animate-* utility. */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-white font-sans text-ink;
+    background-image: radial-gradient(circle at 100% 0%, #f0f6ff 0%, rgba(255, 255, 255, 0) 38%);
+    background-attachment: fixed;
+  }
+  /* a softer scrollbar so the white canvas stays clean */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #dbe4f0;
+    border-radius: 999px;
+    border: 2px solid #fff;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c2d1e4;
+  }
+}
+
+@layer components {
+  /* card hover-lift used across dashboard / device cards */
+  .lift {
+    @apply transition-all duration-200 ease-out;
+  }
+  .lift:hover {
+    transform: translateY(-3px);
+    @apply shadow-lift;
+  }
+
+  /* press feedback on buttons */
+  .press {
+    @apply transition-transform duration-100;
+  }
+  .press:active {
+    transform: scale(0.97);
+  }
+
+  /* shimmering skeleton block */
+  .skeleton {
+    @apply relative overflow-hidden rounded-lg bg-[#e9eff7];
+  }
+  .skeleton::after {
+    content: '';
+    @apply absolute inset-0 -translate-x-full;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* animated striped progress fill */
+  .bar-animated {
+    background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.25) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.25) 50%,
+      rgba(255, 255, 255, 0.25) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 40px 40px;
+    @apply animate-bar-stripe;
+  }
+}
