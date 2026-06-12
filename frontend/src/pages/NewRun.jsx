@@ -75,7 +75,7 @@ export default function NewRun() {
         </Button>
         {atCap && (
           <span className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 -translate-x-1/2 whitespace-nowrap rounded-lg bg-ink px-3 py-1.5 text-xs font-semibold text-white opacity-0 transition-opacity group-hover:opacity-100">
-            20 is the cap for one batch
+            {MAX_DEVICES} is the cap for one batch
           </span>
         )}
       </div>

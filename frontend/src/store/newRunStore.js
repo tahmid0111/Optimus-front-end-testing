@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-export const MAX_DEVICES = 20
+export const MAX_DEVICES = 50
 export const MIN_FILES = 2
 export const MAX_FILES = 4
 const DEFAULT_ENGINEER = 'Laith Hayajneh'
